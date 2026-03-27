@@ -57,9 +57,9 @@ Sample Request (POST)
 }
 
 Team
-	• Onwukamuche Onyinyechi Lynda
-	• David
-	• 
+	• Onwukamuche Onyinyechi Lynda - Data Scientist
+	• David Uhumagho - Ful-Stack Developer
+	• Seimat Akinwale - Product Manager
 
 Future Improvements
 	•	Integration with payment APIs (e.g., Interswitch)
