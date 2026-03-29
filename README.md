@@ -2,15 +2,18 @@
 AI powered credit scoring and loan recommendation system for SMEs using POS transaction data.
 
 Overview
+
 MerchantFloat AI is a data driven scoring system that evaluates the financial health of merchants based on transaction behavior. It transforms raw POS data into actionable insights, including credit scores, risk classification and loan recommendations in real time. 
 
 Problem
+
 Many small and medium sized enterprises(SMEs) struggle to access credit due to:
 	•	Lack of formal credit history
 	•	Heavy reliance on collateral
 	•	Manual and inefficient risk assessment processes.
 
  Solution
+ 
 MerchantFloat AI leverages transaction level data to:
 	•	Generate credit scores (300–850 scale)
 	•	Classify merchants into risk levels(Low, Medium, High)
@@ -18,6 +21,7 @@ MerchantFloat AI leverages transaction level data to:
 	•	Provide explainable, data driven insights
   
 Features
+
 	•	AI-powered credit scoring engine
 	•	Risk classification system
 	•   Loan recommendation logic
@@ -25,7 +29,9 @@ Features
 	•	Explainable insights for decision making
 	
 Technical Approach
+
 Feature Engineering
+
 Transaction data is aggregated into merchant level metrics such as
     •	Average revenue
 	•	Revenue volatility
@@ -34,11 +40,13 @@ Transaction data is aggregated into merchant level metrics such as
 	•	Transaction activity
 
 Machine Learning
+
 	•	K-Means clustering for behavioral segmentation
 	•	StandardScaler for normalization
 	•	Hybrid approach combining ML + rule-based scoring
 
 Scoring System
+
 	•	Weighted scoring model based on:
 	•	Revenue strength
 	•	Consistency
@@ -52,6 +60,7 @@ Transaction Data → Backend (Bun.js) → FastAPI (AI Engine) → Scoring Output
 
 
 Tech Stack
+
 	•	Python (FastAPI)
 	•	Scikit-learn (K-Means Clustering)
 	•	Pandas / NumPy
@@ -62,10 +71,13 @@ Tech Stack
 Transaction Data → Backend (Bun.js) → FastAPI (AI Engine) → Scoring Output → Frontend Dashboard
 
 API Endpoints
+
 Method       Endpoint                          Description
 GET          /analyze                        Get all merchants
 GET          /analyze/{merchant_id}          Get single merchant
 POST         /analyze                        Analyze transaction data
+
+Sample request
 
 {"transaction":[
 {"merchant_id": "M_TEST",
