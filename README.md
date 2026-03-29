@@ -1,4 +1,5 @@
 # MerchantFloat-AI
+
 AI powered credit scoring and loan recommendation system for SMEs using POS transaction data.
 
 Overview
